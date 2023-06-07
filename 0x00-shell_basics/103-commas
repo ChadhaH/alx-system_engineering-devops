@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -a | grep -E '^[A-Za-z0-9]' | sort -V | awk '{ORS=NR%2?",":"\n"}1'
+ls -Xap | sort -V | paste -sd ","
