@@ -11,3 +11,4 @@ exec {'hard_limit':
   provider => shell,
   command  => 'sudo sed -i "s/nofile 4/nofile 40000/" /etc/security/limits.conf',
 }
+
